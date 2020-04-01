@@ -25,7 +25,7 @@
 
 	if(isset($_GET["idFF"])){
 	$_SESSION['idLTdelete']=$_GET["idFF"];
-	echo $_SESSION['idLTdelete'];
+	//echo $_SESSION['idLTdelete'];
 	}
 
 	if (isset($_SESSION['login']))

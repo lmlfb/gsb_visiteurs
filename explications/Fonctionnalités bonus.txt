@@ -1,0 +1,17 @@
+--Espace Admin
+
+	Possibilité de voir les fiches des autres utilisateurs et de les modifier/supprimer
+
+--Changement d'arrière plan
+
+	Selection de manière aléatoire d'un arrière plan qui se conserve durant la session
+
+
+--Securite
+
+	Si un utilisateur arrive sur une page autre que login sans être connecté,
+	il est redirigé vers login
+
+--Explication de la construction du site
+
+	fichier "navigation_entre_les_pages"
