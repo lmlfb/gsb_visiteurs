@@ -2,7 +2,7 @@
 
 	session_start();
 
-    $_GET["goback"]=1;
+    $_POST["goback"]=1;
 
 	require("backround.php");
 
@@ -15,7 +15,7 @@
 			</center>
 			";
 	
-	if(isset($_GET["id"]) && isset($_GET["mdp"])){
+	if(isset($_POST["id"]) && isset($_POST["mdp"])){
 
 	require("connexion.php");
 
@@ -24,20 +24,20 @@
 		{	
 			$requete = $bdd->prepare("SELECT * FROM visiteur WHERE login = :login AND mdp = :password");
 	
-			$requete->bindValue(':login', $_GET["id"], PDO::PARAM_STR);
-			$requete->bindValue(':password', $_GET["mdp"], PDO::PARAM_STR);
+			$requete->bindValue(':login', $_POST["id"], PDO::PARAM_STR);
+			$requete->bindValue(':password', $_POST["mdp"], PDO::PARAM_STR);
 	
 			$requete->execute();
 			$result = $requete->fetch();
 	
 			if ($result)
 			{
-				$_SESSION['login'] = $_GET["id"];
-				$_SESSION['pwd'] = $_GET["mdp"];
+				$_SESSION['login'] = $_POST["id"];
+				$_SESSION['pwd'] = $_POST["mdp"];
 				$_SESSION["goback"]=1;
 				header('Location: menu.php');
 			}
-			else if (isset($_GET["id"])) {
+			else if (isset($_POST["id"])) {
 				
 				echo $fenetreWarnig;
 			}
@@ -64,7 +64,7 @@
 			Connexion
 		</center>
 		<center>
-			<form action="login.php" method="get" class="form-exemple">
+			<form action="login.php" method="post" class="form-exemple">
 				<br>
 				<label id="txt_id">Nom utilisateur :</label>
 				<input type="text" name="id">
