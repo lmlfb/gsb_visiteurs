@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 require("backround.php");
 require("connexion.php");
@@ -7,22 +8,15 @@ if (isset($_GET["deco"])) {
     header('Location: login.php');
     exit();
 }
+
+//aller à la page login si pas connecté
 if (!isset($_SESSION["goback"])) {
     session_destroy();
     header('Location: login.php');
     exit();
 }
-if (isset($_GET["delete"]) && $_GET["delete"] == 1 && isset($_GET["idFF"])) {
-    echo $_GET["delete"];
-    try {
-        $requeteID = $bdd->prepare("DELETE *f FROM fichefrais WHERE idFF=:idFF");
-        $requeteID->bindValue(':idFF', $_GET["idFF"], PDO::PARAM_STR);
-        $requeteID->execute();
-    }
-    catch (Exception $e) {
-        die('Erreur : ' . $e->getMessage());
-    }
-}
+
+
 if (!isset($_SESSION['login'])) {
     header('Location: login.php');
     exit();

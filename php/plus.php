@@ -1,6 +1,6 @@
 <?php
 
-//Cette page appelé quand on clic sur le bouton + ajoute +1 au frais de la fiche 
+//=============Cette page est appelée quand on clic sur le bouton + ajoute +1 au frais de la fiche=============
 session_start();
 
 if (!isset($_SESSION["goback"])) {
