@@ -1,13 +1,8 @@
-<?php 
-
+<?php
 //pas besoin de demarrarer un session car toujours appelé après lancement dans autres php
-
-if(!isset($_SESSION['NbWal'])){
-
+if (!isset($_SESSION['NbWal'])) {
     $_SESSION['NbWal'] = random_int(0, 2);
-
 }
-
 switch ($_SESSION['NbWal']) {
     case 0:
         echo "<style type=text/css>body {background-image: url(../image/insert_backround0.jpg);}</style>";
@@ -17,7 +12,6 @@ switch ($_SESSION['NbWal']) {
         break;
     case 2:
         echo "<style type=text/css>body {background-image: url(../image/insert_backround2.jpg);}</style>";
-        break;             
+        break;
 }
-
- ?>
+?>
