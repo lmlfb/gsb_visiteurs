@@ -8,9 +8,6 @@ if(!isset($_SESSION['NbWal'])){
 
 }
 
-//echo "<style type=text/css>body {background-image: url(../image/insert_backround".$_SESSION['NbWal'].".jpg);}</style>";
-//echo "<style type=text/css>body {background-image: url(../image/insert_backround4.jpg);}</style>";
-//$_SESSION['NbWal']
 switch ($_SESSION['NbWal']) {
     case 0:
         echo "<style type=text/css>body {background-image: url(../image/insert_backround0.jpg);}</style>";
@@ -23,5 +20,4 @@ switch ($_SESSION['NbWal']) {
         break;             
 }
 
-//$_SESSION['login']
  ?>

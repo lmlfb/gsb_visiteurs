@@ -16,8 +16,6 @@
 
 		try
 	    {
-	        //SELECT id FROM visiteur WHERE login='admin'
-	        //$prix =  $result['montant']*$_GET["qt"];
 	        $requeteID = $bdd->prepare("DELETE FROM lignefraisforfait WHERE idFF=:idFF");
 	        $requeteID->bindValue(':idFF', $_SESSION[$keyDeIdentifiantFiche], PDO::PARAM_STR);
 	        $requeteID->execute();	
@@ -29,8 +27,6 @@
 
 	    try
 	    {
-	        //SELECT id FROM visiteur WHERE login='admin'
-	        //$prix =  $result['montant']*$_GET["qt"];
 	        $requeteID = $bdd->prepare("DELETE FROM fichefrais WHERE id=:idFF");
 	        $requeteID->bindValue(':idFF', $_SESSION[$keyDeIdentifiantFiche], PDO::PARAM_STR);
 	        $requeteID->execute();	

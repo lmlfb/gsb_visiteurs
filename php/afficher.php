@@ -50,8 +50,6 @@
 	{
 	    try
 	    {
-	        //SELECT id FROM visiteur WHERE login='admin'
-	        //$prix =  $result['montant']*$_GET["qt"];
 	        $requeteID = $bdd->prepare("SELECT id FROM visiteur WHERE login=:userLogin");
 	        $requeteID->bindValue(':userLogin', $_SESSION['login'], PDO::PARAM_STR);
 	        $requeteID->execute();

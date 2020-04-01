@@ -1,6 +1,4 @@
 <?php
-//////////////////////////////////////////////////////////////////////////////////////////////
-//\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 	
 	session_start();
 
@@ -22,8 +20,6 @@
 
 		try
 	    {
-	        //SELECT id FROM visiteur WHERE login='admin'
-	        //$prix =  $result['montant']*$_GET["qt"];
 	        $requeteID = $bdd->prepare("DELETE FROM lignefraisforfait WHERE idFraisForfait=:idFraisForfait AND idFF=:idFF");
 	        $requeteID->bindValue(':idFraisForfait', $_GET["idType"], PDO::PARAM_STR);
 	        $requeteID->bindValue(':idFF', $_SESSION[$keyDeIdentifiantFiche], PDO::PARAM_STR);
@@ -36,7 +32,6 @@
 
 	$url = "afficher_detail.php?idFF=".$_SESSION['idLTdelete'];
 	header('Location: '  . $url);
-	//header("Location: afficher_detail.php?".$_SESSION['idLTdelete'].");
 
 	
 	

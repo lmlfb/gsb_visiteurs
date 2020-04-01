@@ -155,7 +155,7 @@ if($createNewFact==false){
 
 
 
-///>>>>>>>>>>>>>>>>>>>>>>>>>>>Verifier s'il il y'a une ligne existante pour ce type de frais ce mois ci<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+///>>>>>>>>>>>>>>>>>>>>>>>Verifier s'il il y'a une ligne existante pour ce type de frais ce mois ci<<<<<<<<<<<
 global $creerNewLigne;
 
 if (isset($_GET["qt"]))

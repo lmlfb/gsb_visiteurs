@@ -34,8 +34,6 @@
 
 	    try
 	    {
-	        //SELECT id FROM visiteur WHERE login='admin'
-	        //$prix =  $result['montant']*$_GET["qt"];
 	        $requeteID = $bdd->prepare("SELECT id FROM visiteur WHERE login=:userLogin");
 	        $requeteID->bindValue(':userLogin', $_SESSION['login'], PDO::PARAM_STR);
 	        $requeteID->execute();
@@ -54,7 +52,6 @@
 }
 
 
-//SELECT * FROM `fichefrais` WHERE idVisiteur = 'adm';
 		global $prixTot;
 		$prixTot = 0;
 		$resultFICHE = false;
@@ -70,12 +67,8 @@
 			$requeteFICHE->execute();
 			$resultFICHE = $requeteFICHE-> fetchAll (PDO::FETCH_ASSOC);
 			}
-			//var_dump($resultFICHE);		
 
 			if($resultFICHE != false){
-
-
-				//<tr class=trTab>
 
 				echo("<table class=TabListefiche>");
 				echo "
@@ -88,8 +81,6 @@
 					<th class=Tabtd>Retirer</th>
 					
 					</tr>";
-
-					//echo("<tr><td class=Tabtd>lolilo</td></tr>");
 
 					foreach ($resultFICHE as $key => $value) {
 
