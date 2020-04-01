@@ -38,6 +38,8 @@ if (isset($_SESSION['login'])) {
 global $prixTot;
 $prixTot     = 0;
 $resultFICHE = false;
+
+//récupére et affiche les lignes d'une fiche
 try {
     if (isset($_GET["idFF"])) {
         $keyDeIdentifiantFiche = "key" . $_GET["idFF"];
@@ -61,6 +63,8 @@ try {
         foreach ($resultFICHE as $key => $value) {
             echo "<tr>";
             foreach ($value as $key2 => $value2) {
+
+            	//On passe idFraisForfait en information mieux compréhensible pour l'utilisateur
                 if ($key2 == 'idFraisForfait') {
                     echo "<td class=Tabtd>";
                     if ($value2 == 'ETP')
@@ -73,6 +77,8 @@ try {
                         echo "Repas Restaurant";
                     //else{echo "$value2";}
                     echo "</td>";
+
+                    //On calcule les prix des fiches
                     switch ($value2) {
                         case "ETP":
                             $prix = $qt * 110;

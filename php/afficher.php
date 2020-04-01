@@ -120,7 +120,7 @@ try {
                     catch (Exception $e) {
                         die('Erreur : ' . $e->getMessage());
                     }
-                    ////////////////////////////////////////////////////////////////////////////////////////////////////////////:
+
                 } elseif ($KeyLiFiche == 'etat') {
                     if ($LiFiche == 'CL')
                         echo ("<td class=Tabtd>Cloturée</td>");
