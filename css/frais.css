@@ -1,0 +1,174 @@
+body {
+
+	font-family:"Roboto", bold italic;
+
+  
+}
+
+option, select{
+
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid #494949 !important;
+}
+
+a, input{
+
+color: #494949 !important;
+text-decoration: none;
+padding: 5px;
+border: 2px solid #494949 !important;
+display: inline-block;
+transition: all 0.4s ease 0s;
+border-radius: 8px;
+
+}
+
+
+a:hover, input:hover {     
+ background-color: rgba(221, 240, 244, 1)
+}
+
+.backRed
+{
+
+  background-color: rgba(114, 243, 117, 0.8);
+  transition: all 0.4s ease 0s;
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  top: 19%;
+  width: 12%;
+  text-align: center;
+  border-radius: 10px;
+  
+}
+
+
+.backWhite
+{
+    background-color: rgba(255, 255, 255, 0.8);
+	transition: all 0.4s ease 0s;
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  top: 30%;
+  width: 25%;
+	
+}
+
+.backWhite:hover {
+
+  background-color: rgba(255, 255, 255, 0.85);
+  transition: all 0.4s ease 0s;
+  width: 26%;
+}
+
+#smallerNumber{
+
+	width: 80px;
+	text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+#log{
+
+  position: absolute;
+  top: 1em;
+  right: 1em;
+
+
+
+}
+
+#log>img{
+
+	display: inline-block;
+}
+
+#log>#txt{
+
+	color:white;
+	position: relative;
+	bottom: 18px;
+	text-decoration: bold;
+}
+
+#logout{
+
+	color:white;
+  background-color: rgba(255, 255, 255, 0.65);
+
+}
+
+#logout:hover{
+
+  color:white;
+  background-color: rgba(255, 255, 255, 0.85);
+
+}
+
+
+
+@keyframes myAnimation{
+  0%{
+    opacity: 0.8;
+    transform: rotateX(90deg);
+  }
+  25%{
+    opacity: 0.95;
+    transform: rotateX(0deg);
+  }
+  80%{
+    opacity: 0.95;
+    transform: rotateX(0deg);
+  }
+  100%{
+    display: none;
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+}
+
+#logoAnim{
+	position: relative;
+	top: 8px; 
+    animation-name: myAnimation;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+}
+
+#txtAnim{
+
+	color:green;
+	animation-name: myAnimation;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+}
+
+#wrong{
+
+  margin-top:5%;
+  transition: all 0.4s ease 0s;
+  width: 17%;
+  background-color: rgba(217, 30, 24, 1);
+
+}
+
+#greenOk{
+
+  margin-top:7%;
+  transition: all 0.4s ease 0s;
+  width: 10%;
+  background-color: rgba(114, 243, 117, 0.8);
+  animation-name: myAnimation;
+  animation-duration: 2000ms;
+  animation-fill-mode: forwards;
+
+
+}
+

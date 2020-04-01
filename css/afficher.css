@@ -1,0 +1,194 @@
+body {
+
+	
+	font-family:"Roboto", bold italic;
+
+  
+}
+
+.buttondiv{
+
+	margin-top: 15%;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+
+
+}
+
+.corbeille:hover{
+
+transform: rotate(13deg);
+}
+
+
+#ModifA{
+
+	color: rgba(0, 0, 0, 1)!important;
+	border: none!important;
+}
+
+button{
+
+	margin-top: 5px;
+	text-align: center;
+}
+
+
+#wrong{
+
+	margin-top:5%;
+    background-color: rgba(217, 30, 24, 1);
+	width: 25%;
+	transition: all 0.4s ease 0s;
+	margin-left: auto;
+	margin-right:auto;	
+	margin-bottom: 1%;		 	
+}
+
+#wrong:hover {
+
+  background-color: rgba(242, 38, 19, 1);
+  transition: all 0.4s ease 0s;
+  width: 26%;
+}
+
+.titre{
+
+
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 30%;
+
+
+}
+
+li{
+	list-style: none;
+}
+
+.backWhite
+{
+    background-color: rgba(255, 255, 255, 0.5);
+	width: 25%;
+	transition: all 0.4s ease 0s;
+	margin-left: auto;
+	margin-right:auto;
+	border-radius: 6px;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	right: 30%;
+	text-align: center;
+	font-size: large;
+	
+}
+
+.backWhite:hover {
+
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.4s ease 0s;
+  width: 25%;
+}
+
+
+.button {
+
+color: #494949 !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #ffffff;
+padding: 20px;
+border: 4px solid #494949 !important;
+display: inline-block;
+transition: all 0.4s ease 0s;
+}
+
+
+
+#log{
+
+  position: absolute;
+  top: 1em;
+  right: 1em;
+
+
+
+}
+
+#log>img{
+
+	display: inline-block;
+}
+
+#log>#txt{
+
+	color:white;
+	position: relative;
+	bottom: 18px;
+	text-decoration: bold;
+}
+
+#logout{
+
+	color:white;
+  background-color: rgba(255, 255, 255, 0.65);
+
+}
+
+#logout:hover{
+
+  color:white;
+  background-color: rgba(255, 255, 255, 0.85);
+
+}
+
+a, input{
+
+color: #494949 !important;
+text-decoration: none;
+padding: 5px;
+border: 2px solid #494949 !important;
+display: inline-block;
+transition: all 0.4s ease 0s;
+border-radius: 8px;
+
+}
+
+
+a:hover, input:hover {     
+ background-color: rgba(221, 240, 244, 1)
+}
+
+
+.TabListefiche {
+
+	background-color: rgba(255, 255, 255, 0.7);
+	border: 1px solid black;
+	position: absolute;
+	width: 50%;
+	transition: all 0.4s ease 0s;
+	margin-left: auto;
+	margin-right:auto;
+	border-radius: 2px;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	right: 30%;
+	text-align: center;
+
+}
+
+.TabListefiche:hover{
+
+	background-color: rgba(255, 255, 255, 0.9);
+
+}
+
+.Tabtd{
+	
+	border: 1px solid black;
+
+}
+
+

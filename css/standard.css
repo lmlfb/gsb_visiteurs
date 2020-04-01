@@ -1,0 +1,220 @@
+body {
+
+	
+	font-family:"Roboto", bold italic;
+
+  
+}
+
+.buttondiv{
+
+	margin-top: 15%;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 30%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 3px;
+
+
+}
+
+.buttondiv:hover{
+
+    width: 30.2%;
+
+}
+
+
+
+button{
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+	 background-color: rgba(255, 255, 255, 0.75);
+	border-radius: 3px;
+	border: none;
+	font-size: 1.1em;
+	font-family:"Roboto", bold italic;
+}
+
+button:hover{
+
+	text-align: center;
+	 background-color: rgba(255, 255, 255, 0.99);
+	border: none;
+	border-radius: 5px;
+}
+
+
+#wrong{
+
+	margin-top:5%;
+    background-color: rgba(217, 30, 24, 1);
+	width: 25%;
+	transition: all 0.4s ease 0s;
+	margin-left: auto;
+	margin-right:auto;	
+	margin-bottom: 1%;		 	
+}
+
+#wrong:hover {
+
+  background-color: rgba(242, 38, 19, 1);
+  transition: all 0.4s ease 0s;
+  width: 26%;
+}
+
+.titre{
+
+
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 30%;
+
+
+}
+
+li{
+	list-style: none;
+}
+
+.backWhite
+{
+    background-color: rgba(255, 255, 255, 0.5);
+	width: 25%;
+	transition: all 0.4s ease 0s;
+	margin-left: auto;
+	margin-right:auto;
+	border-radius: 6px;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	right: 30%;
+	
+}
+
+.backWhite:hover {
+
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: all 0.4s ease 0s;
+  width: 26%;
+}
+
+
+.button {
+
+color: #494949 !important;
+text-transform: uppercase;
+text-decoration: none;
+background: #ffffff;
+padding: 20px;
+border: 4px solid #494949 !important;
+display: inline-block;
+transition: all 0.4s ease 0s;
+}
+
+
+a, input{
+
+color: #494949 !important;
+text-decoration: none;
+padding: 5px;
+border: 2px solid #494949 !important;
+display: inline-block;
+transition: all 0.4s ease 0s;
+border-radius: 8px;
+}
+
+
+a:hover, input:hover {     
+ background-color: rgba(221, 240, 244, 1)
+}
+
+#log{
+
+  position: absolute;
+  top: 1em;
+  right: 1em;
+}
+
+#log>img{
+
+	display: inline-block;
+}
+
+#log>#txt{
+
+	color:white;
+	position: relative;
+	bottom: 18px;
+	text-decoration: bold;
+}
+
+#logout{
+
+	color:white;
+  background-color: rgba(255, 255, 255, 0.65);
+
+}
+
+#logout:hover{
+
+  color:black;
+  background-color: rgba(255, 255, 255, 0.85);
+
+}
+
+#log{
+
+  position: absolute;
+  top: 1em;
+  right: 1em;
+
+
+
+}
+
+#log>img{
+
+	display: inline-block;
+}
+
+#log>#txt{
+
+	color:white;
+	position: relative;
+	bottom: 18px;
+	text-decoration: bold;
+}
+
+#logout{
+
+	color:white;
+
+}
+
+.TabListefiche {
+
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid black;
+	position: absolute;
+	width: 35%;
+	transition: all 0.4s ease 0s;
+	margin-left: auto;
+	margin-right:auto;
+	border-radius: 2px;
+	position: absolute;
+	top: 30%;
+	left: 30%;
+	right: 30%;
+	text-align: center;
+
+}
+
+.Tabtd{
+	
+	border: 1px solid black;
+
+}
+
+
