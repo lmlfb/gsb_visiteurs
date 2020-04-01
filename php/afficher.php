@@ -41,7 +41,9 @@ if (isset($_SESSION['login'])) {
         die('Erreur : ' . $e->getMessage());
     }
 }
-//SELECT * FROM `fichefrais` WHERE idVisiteur = 'adm';
+
+
+//Recuperer les fiches frais de l'utilisateur
 global $cacheKey;
 $cacheKey  = 0;
 $increment = 0;
@@ -75,41 +77,32 @@ try {
                                   <a id=ModifA href=delete.php?idFF=" . $increment . ">Supprimer</a>
                                   </td>");
                     $increment++;
-                    /////////////////////////////////////////////////////////////////////////////////        try
                     global $prixTot;
                     $prixTot = 0;
                     try {
                         $requeteFICHEP = $bdd->prepare("SELECT quantite, idFraisForfait FROM lignefraisforfait WHERE idFF = :idFF");
                         $requeteFICHEP->bindValue(':idFF', $cacheKey, PDO::PARAM_STR);
                         $requeteFICHEP->execute();
-                        $resultFICHEP = $requeteFICHEP->fetchAll(PDO::FETCH_ASSOC);
-                        //var_dump($resultFICHE);        
+                        $resultFICHEP = $requeteFICHEP->fetchAll(PDO::FETCH_ASSOC);      
                         if ($resultFICHEP != false) {
-                            //echo("<tr><td class=Tabtd>lolilo</td></tr>");
                             foreach ($resultFICHEP as $key => $value) {
-                                //echo "<tr>";
                                 foreach ($value as $key2 => $value2) {
                                     if ($key2 == 'idFraisForfait') {
-                                        //echo "<td class=Tabtd>";
                                         switch ($value2) {
                                             case "ETP":
                                                 $prix = $qt * 110;
-                                                //echo "<td class=Tabtd>".$prix." €</td>";
                                                 $prixTot += $prix;
                                                 break;
                                             case "KM":
                                                 $prix = $qt * 0.62;
-                                                //echo "<td class=Tabtd>".$prix." €</td>";
                                                 $prixTot += $prix;
                                                 break;
                                             case "NUI":
                                                 $prix = $qt * 80;
-                                                //echo "<td class=Tabtd>".$prix." €</td>";
                                                 $prixTot += $prix;
                                                 break;
                                             case "REP":
                                                 $prix = $qt * 25;
-                                                //echo "<td class=Tabtd>".$prix." €</td>";
                                                 $prixTot += $prix;
                                                 break;
                                         }
