@@ -37,9 +37,7 @@ if (isset($_POST["id"]) && isset($_POST["mdp"])) {
 <head>
     <title>Insert</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../css/standard.css?<?php
-echo time();
-?>">
+    <link rel="stylesheet" type="text/css" href="../css/standard.css">
 </head>
 <body>
     <div class="backWhite">

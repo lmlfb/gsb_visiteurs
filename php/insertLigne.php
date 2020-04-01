@@ -248,9 +248,7 @@ if (isset($result['montant']) && isset($_GET["qt"])) {
 <head>
     <title>Insert</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../css/frais.css?<?php
-echo time();
-?>">
+    <link rel="stylesheet" type="text/css" href="../css/frais.css?">
 </head>
 <body>
     <div class="backWhite">
