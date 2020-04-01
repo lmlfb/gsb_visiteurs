@@ -124,9 +124,7 @@ try {
                                     }
                                 }
                             }
-                            /*echo("<td class=Tabtd>
-                            <a id=ModifA href=delete.php?idFF=".$LiFiche.">Supprimer</a>
-                            </td>");*/
+
                             echo "<td class=Tabtd> " . $prixTot . " €</td>";
                         } else {
                             echo "<td class=Tabtd>0 €</td>";
@@ -147,6 +145,7 @@ try {
                         echo ("<td class=Tabtd>Mise en paiement</td>");
                     if ($LiFiche == 'RE')
                         echo ("<td class=Tabtd>Remboursée</td>");
+
                 } elseif ($KeyLiFiche == 'idVisiteur') {
                     try {
                         $requeteID = $bdd->prepare("SELECT nom FROM visiteur WHERE id=:userLoginI");
@@ -161,7 +160,7 @@ try {
                     catch (Exception $e) {
                         die('Erreur : ' . $e->getMessage());
                     }
-                } else //////////////////////////////////////////////A RETIRER SI ON N'IMPLEMANTE LA MODIFIFICATION DES FICHES
+                } else 
                     {
                     echo "<td class=Tabtd>";
                     echo "$LiFiche";

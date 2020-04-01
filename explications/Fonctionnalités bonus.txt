@@ -12,6 +12,12 @@
 	Si un utilisateur arrive sur une page autre que login sans être connecté,
 	il est redirigé vers login
 
+--cloturation
+
+	A la création d'une nouvelle fiche, la fiche du mois précédent, si existante,
+	est cloturé : impossible maintenant de modifier cette fiche en tant qu'utilisateur normal,
+	seul l'admin le peux
+
 --Explication de la construction du site
 
 	fichier "navigation_entre_les_pages"
